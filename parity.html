@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <title>VERIFICA PARIDADE</title>
+</head>
+
+<body>
+  <header class="header">
+    <ul class="headerList">
+      <a href="index.html">
+        <p>Início</p>
+      </a>
+      <a href="parity.html">
+        <p>Verifica Paridade</p>
+      </a>
+      <a href="crc.html">
+        <p>Calculadora CRC</p>
+      </a>
+      <a href="checksum.html">
+        <p>Checksum</p>
+      </a>
+    </ul>
+  </header>
+
+  <section class="main">
+    <div class="wrapper">
+      <h1 class="title">Verifica Paridade</h1>
+      <form>
+        <div class="inputWrapper">
+          <label for="inputBinary" class="inputLabel">Digite o seu número binário no campo abaixo (até 100 bits)</label>
+          <input type="text" name="inputBinary" id="inputBinary" class="inputValue" placeholder="Ex: 01001" />
+
+          <div class="btns">
+            <button type="submit" class="btn">Checar paridade</button>
+            <button type="reset" class="btn">Limpar campo</button>
+          </div>
+        </div>
+      </form>
+
+      <p id="result" class="result"></p>
+      <p id="parityType" class="result"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Desenvolvido com muito &#128420; (e um pouquinho de ódio) por Gabriela e Henrique.</p>
+  </footer>
+
+  <script src="js/parity.js"></script>
+</body>
+
+</html>
